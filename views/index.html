@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search Review</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity=”sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I” crossorigin="anonymous">
+        <link rel="stylesheet" href="css/temp.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity=”sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/” crossorigin=”anonymous”></script>
+        
+    </head>
+    <body>
+       
+        <div class="navbar">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="heading">
+                        <h4>REVIEWS  <i class="fa fa-star"></i></h4>                        
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="liststyle">
+                        <ul>
+                            <li><a class="class="nav-link scrollto" href="home.html">Home</a></li>
+                            <li><a class="class="nav-link scrollto" href="profile.php">Profile</a></li>
+                            <li><a class="class="nav-link scrollto" href="help.html">Feedback</a></li>
+                            <li><i class="fa fa-instagram"></i></li>
+                            <li><i class="fa fa-github"></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container1">
+            
+            <div class="slideshow-container">
+                
+                <div class="mySlides fade">
+                    <img src="images/food.jpg" style="width: 1280px; height: 450px;">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="images/restaurant.png" style="width: 1280px; height: 450px;">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/museum.jpg" style="width: 1280px; height: 450px;">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/garden.jpg" style="width: 1280px; height: 450px;">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/beach.jpg" style="width: 1280px; height: 450px;">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/visit.jpg" style="width: 1280px; height: 450px;">
+                </div>
+            
+            </div>
+
+            <br>
+            
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+        
+            <div class="centered">
+                
+            
+        <form action="" method="POST">
+            <div class="row">
+                <div class="rowchar">
+
+                <h3>Enter the location name for reviews</h3>
+
+                <h6>Your one and only source for honest reviews</h6>
+
+                <div class="col">
+                    <div class="colchar">
+        <input type="search" name="place" placeholder="Enter location name" ></div></div>
+        <div class="col">
+        <span class="icon-input-btn">
+		<i class="fa fa-search"></i> 
+		<input type="submit" class="btn btn-primary btn-lg" value="Search" name="submit">
+        </form>
+</div>
+</div>  
+</div>
+</div>
+</div>
+
+    </body>
+
+    <script>
+        var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";  
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}    
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";  
+dots[slideIndex-1].className += " active";
+setTimeout(showSlides, 6000); // Change image every 2 seconds
+}
+    </script>
+</html>
